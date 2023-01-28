@@ -1,0 +1,417 @@
+/* Maha AlShehri - 2005603 */
+@import url('all.css');
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: #060606;
+    color: aliceblue;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+img {
+    height: 100px;
+}
+section {
+    height: 100vh;
+    background-color: #0d0d0d;
+    border-radius: 40px;
+    overflow: hidden;
+    margin: 10px;
+}
+header {
+    position: relative;
+}
+header nav {
+    width: 60%;
+    position: absolute;
+    right: 0;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-decoration: none;
+}
+header nav ul a {
+    font-size: 26px;
+    text-decoration: none;
+    color: aliceblue;
+}
+header nav ul a:hover {
+    color: #aa3fff;
+}
+#Home {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#Home h3 {
+    font-size: 4rem;
+    background-image: linear-gradient(90deg, #6557FF 0%, #AA3FFF 29.43%, #AA3FFF 68.23%, #F8522E 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+#Home h2 {
+    font-size: 50px;
+}
+#Home p {
+    font-size: 30px;
+    color: rgba(240, 248, 255, 0.644);
+}
+#Home button {
+    font-size: 20px;
+    padding: 15px;
+    width: 150px;
+    border-radius: 40px;
+    border: 0;
+    outline: 0;
+}
+#Home button:hover {
+    box-shadow: 5px 5px 15px #f8522e, -5px -5px 15px #aa3fff, -5px 5px 15px #6557ff, 5px -5px 15px white;
+}
+#Project {
+    padding: 10px;
+    height: auto;
+}
+#Project .container {
+    margin: auto;
+}
+#Project .container h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #aa3fff;
+    text-transform: uppercase;
+}
+#Project .container .project {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    gap: 20px;
+}
+.project>div {
+    background-color: #19191a;
+    border-radius: 40px;
+    border: 1.5px solid #4b4b4b;
+    padding: 15px;
+}
+.project  h2{
+    text-align: start;
+    color: white;
+}
+.project>div a {
+    color: white;
+    text-decoration: none;
+}
+.project .one {
+    grid-area: 1/1/2/4;
+    position: relative;
+    background-image: linear-gradient(315deg, #19191a 20%, #3c0264 50%, #a93fff 100%);
+}
+#Project .container .project .one p {
+    position: absolute;
+    text-align: left;
+    width: 40%;
+}
+#Project .container .project .one img {
+    position: absolute;
+    right: 20%;
+    height: 150px;
+}
+#Project .container .project .one:hover {
+    opacity: 1;
+    scale: 90%;
+    outline: 3px #aa3fff double;
+    outline-offset: 5px;
+    background-clip: border-box;
+}
+.project .two {
+    grid-area: 2/1/4/2;
+    position: relative;
+    background-image: linear-gradient(315deg, #aa3fff 20%, #c6afc3 100%);
+    opacity: 0.9;
+}
+#Project .container .project .two p {
+    position: absolute;
+    bottom: 25px;
+}
+#Project .container .project .two a i {
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+#Project .container .project .two:hover {
+    opacity: 1;
+    scale: 90%;
+    outline: 3px #aa3fff double;
+    outline-offset: 5px;
+    background-clip: border-box;
+}
+.project .three {
+    grid-area: 2/2/3/3;
+    opacity: 1;
+    filter: contrast(160%) brightness(100%);
+    background: linear-gradient(133deg, black, rgba(169, 63, 255, 0.598), rgba(183, 111, 165, 0.562)), url(noise.svg);
+}
+#Project .container .project .three a i {
+    font-size: 50px;
+}
+#Project .container .project .three:hover {
+    scale: 90%;
+    outline: 3px #aa3fff dotted;
+    outline-offset: 5px;
+    background-clip: border-box;
+}
+#Project .container .four {
+    grid-area: 1/4/2/5;
+    background: radial-gradient(at 75% 80%, #a93fff, #3c0264, #090909);
+}
+#Project .container .project .four i {
+    font-size: 50px;
+}
+#Project .container .four:hover {
+    scale: 90%;
+    outline: 3px #aa3fff dotted;
+    outline-offset: 5px;
+    background-clip: border-box;
+}
+#Project .container .five {
+    grid-area: 3/2/4/4;
+    opacity: 0.8;
+    background-image: linear-gradient(#dbdada3f 1.6px, transparent 1.6px), linear-gradient(to right, #dbdada3f 1.6px, #3c0264 1.6px);
+    background-size: 50px 50px;
+}
+
+#Project .container .five:hover {
+    opacity: 1;
+    scale: 90%;
+    outline: 3px #aa3fff double;
+    outline-offset: 5px;
+    background-clip: border-box;
+}
+
+#Project .container .six {
+    grid-area: 2/4/4/5;
+    position: relative;
+    background: conic-gradient(from 165deg at 45% 75%, #090909, #aa3fff, #090909);
+}
+
+#Project .container .six p {
+    position: absolute;
+    top: 100;
+}
+
+#Project .container .six:hover {
+    opacity: 1;
+    scale: 90%;
+    outline: 3px #aa3fff double;
+    outline-offset: 5px;
+    background-clip: border-box;
+}
+
+#Project .container .seven {
+    grid-area: 2/3/3/4;
+    background-image: linear-gradient(50deg, #a93fff, #090909);
+}
+
+#Project .container .project .seven i {
+    font-size: 50px;
+}
+
+#Project .container .seven:hover {
+    scale: 90%;
+    outline: 3px #aa3fff double;
+    outline-offset: 5px;
+    background-clip: border-box;
+}
+
+#About {
+    padding: 40px;
+
+}
+
+#About .content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+
+#About .content .text {
+    grid-area: 0.25;
+    font-size: larger;
+}
+
+#About .content img {
+    height: 500px;
+    grid-area: 0.0555555556;
+    border-radius: 30px;
+    margin: 10;
+}
+
+#About .content .skill .icon i {
+    font-size: 50px;
+    padding: 5px;
+    background-image: linear-gradient(90deg, #6557FF 0%, #AA3FFF 29.43%, #AA3FFF 68.23%, #F8522E 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+footer {
+    text-align: center;
+    height: 20vh;
+    padding: 20px;
+    background-color: #0d0d0d;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+footer #contact {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+footer #contact ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+footer #contact ul li i {
+    font-size: 40px;
+    color: #aa3fff;
+}
+
+footer #contact ul li i:hover {
+    background-image: linear-gradient(90deg, #6557FF 0%, #AA3FFF 29.43%, #AA3FFF 68.23%, #F8522E 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: gradient 15s ease infinite;
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #Project .container .project {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #Project .container .project {
+        display: block;
+    }
+
+    #Project .container .project .one,
+    #Project .container .project .two {
+        position: static;
+    }
+
+    #Project .container .project .one img,
+    #Project .container .project .two img,
+    #Project .container .project .one p,
+    #Project .container .project .two p {
+        position: static;
+    }
+
+    #Project .container .six {
+        position: static;
+    }
+
+    #Project .container .six p {
+        position: static;
+    }
+
+    #Project .container .project .two a i {
+        display: none;
+    }
+
+    #About .content {
+        display: block;
+    }
+
+    #About .content img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        height: 100%;
+    }
+    header nav ul a {
+        font-size: 16px;
+    }
+
+    #Home h2 {
+        font-size: 25px;
+    }
+
+    #Home p {
+        font-size: 20px;
+    }
+
+    #Project .container .project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Project .container .project .one,
+    #Project .container .project .two {
+        position: static;
+    }
+
+    #Project .container .project .one img,
+    #Project .container .project .two img,
+    #Project .container .project .one p,
+    #Project .container .project .two p {
+        position: static;
+    }
+    #Project .container .six {
+        position: static;
+    }
+    #Project .container .six p {
+        position: static;
+    }
+    #Project .container .project .two a i {
+        display: none;
+    }
+    #About {
+        height: 150%;
+        display: block;
+        overflow: visible;
+    }
+    #About .content {
+        display: block;
+    }
+    #About .content img {
+        height: 200px;
+    }
+    footer {
+        height: 50%;
+    }
+
+    footer #contact ul {
+
+        flex-direction: column;
+
+    }
+
+    footer #contact ul li {
+        padding: 5px;
+    }
+}
